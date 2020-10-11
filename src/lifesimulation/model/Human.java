@@ -6,6 +6,8 @@
 
 package lifesimulation.model;
 
+import lifesimulation.util.Helper;
+
 /**
  *
  * Created by ivanaazuka
@@ -39,5 +41,11 @@ public class Human {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+    
+    //todo : buat method manusia bisa berjalan, berbicara, lompat, tidur, dll
+    //example
+    public void run() {
+        Helper.print(this.name + " berlari");
     }
 }

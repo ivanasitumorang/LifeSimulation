@@ -17,7 +17,7 @@ public class LifeSimulation {
     /**
      * Bertujuan untuk mensimulasikan kehidupan manusia
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
        
         // todo : buat seorang manusia
         Human mike = new Human();
@@ -26,6 +26,12 @@ public class LifeSimulation {
         mike.setName(objName);
         
         printResult(mike);
+        
+        // todo : jalankan method pada Human
+        //example
+        Helper.print("....");
+        Thread.sleep(1000L);
+        mike.run();
     }
     
     private static void printResult(Human human) {
